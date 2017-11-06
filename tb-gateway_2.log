@@ -1,0 +1,317 @@
+2017-11-06 14:49:49,153 [main] INFO  o.t.gateway.GatewayApplication - Starting GatewayApplication v1.2.1 on ubuntu2 with PID 2801 (/usr/share/tb-gateway/bin/tb-gateway.jar started by thingsboard in /usr/share/tb-gateway/bin)
+2017-11-06 14:49:49,159 [main] DEBUG o.t.gateway.GatewayApplication - Running with Spring Boot v1.4.3.RELEASE, Spring v4.3.5.RELEASE
+2017-11-06 14:49:49,160 [main] INFO  o.t.gateway.GatewayApplication - No active profile set, falling back to default profiles: default
+2017-11-06 14:49:49,259 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2eee9593: startup date [Mon Nov 06 14:49:49 EET 2017]; root of context hierarchy
+2017-11-06 14:49:49,455 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-11-06 14:49:51,122 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9090 (http)
+2017-11-06 14:49:51,146 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2017-11-06 14:49:51,148 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-11-06 14:49:51,239 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-11-06 14:49:51,239 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1980 ms
+2017-11-06 14:49:51,420 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-06 14:49:51,432 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-06 14:49:51,433 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-06 14:49:51,433 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-06 14:49:51,433 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-06 14:49:51,585 [main] INFO  o.t.g.s.c.TbPersistenceConfiguration - Initializing file persistence using directory: storage
+2017-11-06 14:49:51,592 [main] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: <init> ClientID=oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= ServerURI=tcp://192.168.51.173:1883 PersistenceType=org.eclipse.paho.client.mqttv3.persist.MqttDefaultFilePersistence@780cb77
+2017-11-06 14:49:51,602 [main] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: <>
+2017-11-06 14:49:51,615 [main] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >
+2017-11-06 14:49:51,617 [main] DEBUG o.t.g.service.MqttGatewayService - Attempt to connect to Thingsboard!
+2017-11-06 14:49:51,619 [main] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: cleanSession=false connectionTimeout=30 TimekeepAlive=60 userName=BMm9Xn62D9E4l8sOy08y password=[null] will=[null] userContext=null callback=org.thingsboard.gateway.service.MqttGatewayService$1@2d9d4f9d
+2017-11-06 14:49:51,619 [main] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: URI=tcp://192.168.51.173:1883
+2017-11-06 14:49:51,619 [main] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: URI=tcp://192.168.51.173:1883
+2017-11-06 14:49:51,620 [main] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: <
+2017-11-06 14:49:51,626 [main] DEBUG o.e.p.c.mqttv3.internal.ClientComms - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: state=CONNECTING
+2017-11-06 14:49:51,627 [main] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >
+2017-11-06 14:49:51,628 [main] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=null wait max=-1 token=key=null ,topics= ,usercontext=org.eclipse.paho.client.mqttv3.MqttAsyncClient@4034c28c ,isComplete=false ,isNotified=false ,exception=null ,actioncallback=org.eclipse.paho.client.mqttv3.internal.ConnectActionListener@e50a6f6
+2017-11-06 14:49:51,628 [main] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=null timeout=-1 sent=false completed=false hasException=false response=null token=key=null ,topics= ,usercontext=org.eclipse.paho.client.mqttv3.MqttAsyncClient@4034c28c ,isComplete=false ,isNotified=false ,exception=null ,actioncallback=org.eclipse.paho.client.mqttv3.internal.ConnectActionListener@e50a6f6
+2017-11-06 14:49:51,628 [main] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=null wait max=-1
+2017-11-06 14:49:51,628 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientComms - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >
+2017-11-06 14:49:51,629 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >
+2017-11-06 14:49:51,629 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con message=CONNECT clientId oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= keepAliveInterval 60
+2017-11-06 14:49:51,629 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con token=org.eclipse.paho.client.mqttv3.MqttToken@4da23678
+2017-11-06 14:49:51,629 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.TCPNetworkModule - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: connect to host 192.168.51.173 port 1,883 timeout 30,000
+2017-11-06 14:49:51,637 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: starting
+2017-11-06 14:49:51,639 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:51,641 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for new work or for space in the inflight window
+2017-11-06 14:49:51,642 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientComms - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: 200
+2017-11-06 14:49:51,642 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: pending send key=0 message CONNECT clientId oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= keepAliveInterval 60
+2017-11-06 14:49:51,642 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con message=CONNECT clientId oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= keepAliveInterval 60
+2017-11-06 14:49:51,643 [MQTT Con: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con token=org.eclipse.paho.client.mqttv3.MqttToken@4da23678
+2017-11-06 14:49:51,643 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new work or ping arrived 
+2017-11-06 14:49:51,643 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.CommsSender - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network send key=Con msg=CONNECT clientId oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= keepAliveInterval 60
+2017-11-06 14:49:51,643 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: sent bytes count=12
+2017-11-06 14:49:51,643 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: sent bytes count=68
+2017-11-06 14:49:51,644 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.i.wire.MqttOutputStream - null: Attempting to reconnect client: CONNECT clientId oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM= keepAliveInterval 60
+2017-11-06 14:49:51,644 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con
+2017-11-06 14:49:51,644 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: > key=Con
+2017-11-06 14:49:51,644 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for new work or for space in the inflight window
+2017-11-06 14:49:51,644 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for workAvailable
+2017-11-06 14:49:51,650 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received bytes count=1
+2017-11-06 14:49:51,651 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received bytes count=2
+2017-11-06 14:49:51,651 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.i.wire.MqttInputStream - null: Automatic Reconnect Successful: CONNACK msgId 0 session present:true return code: 0
+2017-11-06 14:49:51,651 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received key=0 message=CONNACK msgId 0 session present:true return code: 0
+2017-11-06 14:49:51,651 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: connected
+2017-11-06 14:49:51,652 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.TimerPingSender - null: start timer for client:oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=
+2017-11-06 14:49:51,652 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientComms - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: state=CONNECTED
+2017-11-06 14:49:51,652 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=Con response=CONNACK msgId 0 session present:true return code: 0 excep=null
+2017-11-06 14:49:51,652 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=Con response=CONNACK msgId 0 session present:true return code: 0 excep=null
+2017-11-06 14:49:51,653 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: keyCon, msg=CONNACK msgId 0 session present:true return code: 0, excep=null
+2017-11-06 14:49:51,653 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new workAvailable. key=Con
+2017-11-06 14:49:51,653 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=Con
+2017-11-06 14:49:51,653 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: callback and notify for key=Con
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received key=0 token=org.eclipse.paho.client.mqttv3.MqttToken@4da23678 message=CONNACK msgId 0 session present:true return code: 0
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=Con response=CONNACK msgId 0 session present:true return code: 0 excep=null
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: call onSuccess key=Con
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=null response=CONNACK msgId 0 session present:true return code: 0 excep=null
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=null response=CONNACK msgId 0 session present:true return code: 0 excep=null
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] INFO  o.t.g.service.MqttGatewayService - Connected to Thingsboard!
+2017-11-06 14:49:51,653 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: notify spaceAvailable
+2017-11-06 14:49:51,654 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for workAvailable
+2017-11-06 14:49:51,654 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new work or ping arrived 
+2017-11-06 14:49:51,654 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for new work or for space in the inflight window
+2017-11-06 14:49:51,654 [main] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=null response=CONNACK msgId 0 session present:true return code: 0
+2017-11-06 14:49:51,657 [main] INFO  o.t.g.e.opc.DefaultOpcUaService - Initializing OPC-UA service!
+2017-11-06 14:49:51,689 [pool-2-thread-1] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: < topic=v1/devices/me/telemetry message=nulluserContext=null callback=org.thingsboard.gateway.service.MqttGatewayService$2@4efee9bd
+2017-11-06 14:49:51,700 [pool-2-thread-1] DEBUG o.e.p.c.mqttv3.internal.ClientComms - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: 200
+2017-11-06 14:49:51,700 [pool-2-thread-1] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: pending publish key=1 qos=1 message=PUBLISH qos:1 msgId:1 retained:false dup:false topic:"v1/devices/me/telemetry" payload:[hex:7b227473223a313530393937323539313636342c utf8:"{"ts":1509972591664," length:94]
+2017-11-06 14:49:51,704 [pool-2-thread-1] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=1 message=PUBLISH qos:1 msgId:1 retained:false dup:false topic:"v1/devices/me/telemetry" payload:[hex:7b227473223a313530393937323539313636342c utf8:"{"ts":1509972591664," length:94]
+2017-11-06 14:49:51,704 [pool-2-thread-1] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=1 token=org.eclipse.paho.client.mqttv3.MqttDeliveryToken@1537f15f
+2017-11-06 14:49:51,704 [pool-2-thread-1] DEBUG o.e.p.client.mqttv3.MqttAsyncClient - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: <
+2017-11-06 14:49:51,704 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new work or ping arrived 
+2017-11-06 14:49:51,704 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: +1 actualInFlight=1
+2017-11-06 14:49:51,704 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.CommsSender - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network send key=1 msg=PUBLISH qos:1 msgId:1 retained:false dup:false topic:"v1/devices/me/telemetry" payload:[hex:7b227473223a313530393937323539313636342c utf8:"{"ts":1509972591664," length:94]
+2017-11-06 14:49:51,704 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: sent bytes count=29
+2017-11-06 14:49:51,704 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: sent bytes count=94
+2017-11-06 14:49:51,705 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.i.wire.MqttOutputStream - null: Attempting to reconnect client: PUBLISH qos:1 msgId:1 retained:false dup:false topic:"v1/devices/me/telemetry" payload:[hex:7b227473223a313530393937323539313636342c utf8:"{"ts":1509972591664," length:94]
+2017-11-06 14:49:51,705 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=1
+2017-11-06 14:49:51,705 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: > key=1
+2017-11-06 14:49:51,705 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for new work or for space in the inflight window
+2017-11-06 14:49:51,709 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received bytes count=1
+2017-11-06 14:49:51,709 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received bytes count=2
+2017-11-06 14:49:51,709 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.i.wire.MqttInputStream - null: Automatic Reconnect Successful: PUBACK msgId 1
+2017-11-06 14:49:51,710 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received key=1 message=PUBACK msgId 1
+2017-11-06 14:49:51,710 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=1 response=PUBACK msgId 1 excep=null
+2017-11-06 14:49:51,714 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=1 response=PUBACK msgId 1 excep=null
+2017-11-06 14:49:51,714 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key1, msg=PUBACK msgId 1, excep=null
+2017-11-06 14:49:51,715 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new workAvailable. key=1
+2017-11-06 14:49:51,715 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: callback and notify for key=1
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: received key=1 token=org.eclipse.paho.client.mqttv3.MqttDeliveryToken@1537f15f message=PUBACK msgId 1
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: -1 actualInFlight=0
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsTokenStore - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: key=1
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: removed Qos 1 publish. key=1
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.client.mqttv3.internal.Token - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: >key=1 response=PUBACK msgId 1 excep=null
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: call onSuccess key=1
+2017-11-06 14:49:51,715 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] INFO  o.t.g.service.MqttGatewayService - Gateway statistics {"ts":1509972591664,"values":{"devicesOnline":0,"attributesUploaded":0,"telemetryUploaded":0}} reported!
+2017-11-06 14:49:51,716 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: notify spaceAvailable
+2017-11-06 14:49:51,716 [MQTT Call: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsCallback - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for workAvailable
+2017-11-06 14:49:51,716 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: new work or ping arrived 
+2017-11-06 14:49:51,716 [MQTT Snd: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.mqttv3.internal.ClientState - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: wait for new work or for space in the inflight window
+2017-11-06 14:49:51,811 [main] INFO  o.t.g.e.opc.OpcUaServerMonitor - Initializing OPC-UA server connection to [192.168.53.27:49320]!
+2017-11-06 14:49:52,716 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:53,207 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.h.UaTcpClientAcknowledgeHandler - Sent Hello message on channel=[id: 0x37b81889, L:/192.168.51.180:41758 - R:/192.168.53.27:49320].
+2017-11-06 14:49:53,219 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.h.UaTcpClientAcknowledgeHandler - Received Acknowledge message on channel=[id: 0x37b81889, L:/192.168.51.180:41758 - R:/192.168.53.27:49320].
+2017-11-06 14:49:53,235 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - OpenSecureChannel timeout scheduled for +5s
+2017-11-06 14:49:53,258 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - Sent OpenSecureChannelRequest (Issue, id=0, currentToken=-1, previousToken=-1).
+2017-11-06 14:49:53,267 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - OpenSecureChannel timeout canceled
+2017-11-06 14:49:53,282 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - Received OpenSecureChannelResponse.
+2017-11-06 14:49:53,284 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - SecureChannel id=1710030336, currentTokenId=1, previousTokenId=-1, lifetime=3600000ms, createdAt=DateTime{utcTime=131544461912393611, javaDate=Mon Nov 06 14:49:51 EET 2017}
+2017-11-06 14:49:53,287 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - 0 message(s) queued before handshake completed; sending now.
+2017-11-06 14:49:53,287 [Thread-2] DEBUG o.e.m.o.s.c.ClientChannelManager - Channel bootstrap succeeded: localAddress=/192.168.51.180:41758, remoteAddress=/192.168.53.27:49320
+2017-11-06 14:49:53,392 [Thread-4] DEBUG o.e.m.o.s.c.ClientChannelManager - Sending CloseSecureChannelRequest...
+2017-11-06 14:49:53,402 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.ClientChannelManager - channelInactive(), disconnect complete
+2017-11-06 14:49:53,402 [ua-netty-event-loop-0] DEBUG o.e.m.o.s.c.ClientChannelManager - disconnect complete, state set to Idle
+2017-11-06 14:49:53,437 [main] DEBUG o.e.m.opcua.sdk.client.OpcUaClient - Added ServiceFaultListener: org.eclipse.milo.opcua.sdk.client.ClientSessionManager$$Lambda$1073/1667148529@5c30a9b0
+2017-11-06 14:49:53,448 [main] DEBUG o.e.m.opcua.sdk.client.OpcUaClient - Added SessionActivityListener: org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaSubscriptionManager$1@1ddf84b8
+2017-11-06 14:49:53,618 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.h.UaTcpClientAcknowledgeHandler - Sent Hello message on channel=[id: 0x373a3f6e, L:/192.168.51.180:41760 - R:/192.168.53.27:49320].
+2017-11-06 14:49:53,621 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.h.UaTcpClientAcknowledgeHandler - Received Acknowledge message on channel=[id: 0x373a3f6e, L:/192.168.51.180:41760 - R:/192.168.53.27:49320].
+2017-11-06 14:49:53,621 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - OpenSecureChannel timeout scheduled for +5s
+2017-11-06 14:49:53,717 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:53,733 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - Sent OpenSecureChannelRequest (Issue, id=0, currentToken=-1, previousToken=-1).
+2017-11-06 14:49:53,891 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - OpenSecureChannel timeout canceled
+2017-11-06 14:49:53,965 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - Received OpenSecureChannelResponse.
+2017-11-06 14:49:53,969 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - SecureChannel id=830290415, currentTokenId=1, previousTokenId=-1, lifetime=3600000ms, createdAt=DateTime{utcTime=131544461918330792, javaDate=Mon Nov 06 14:49:51 EET 2017}
+2017-11-06 14:49:53,972 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.h.UaTcpClientMessageHandler - 0 message(s) queued before handshake completed; sending now.
+2017-11-06 14:49:53,973 [Thread-5] DEBUG o.e.m.o.s.c.ClientChannelManager - Channel bootstrap succeeded: localAddress=/192.168.51.180:41760, remoteAddress=/192.168.53.27:49320
+2017-11-06 14:49:53,977 [Thread-6] DEBUG o.e.m.o.s.c.ClientSessionManager - Sending CreateSessionRequest...
+2017-11-06 14:49:54,060 [Thread-7] DEBUG o.e.m.o.s.c.ClientSessionManager - Session created: NodeId{ns=1, id=0ab6e5a8-fd12-4ac5-9673-58a92e65e1a0}
+2017-11-06 14:49:54,126 [Thread-7] DEBUG o.e.m.o.s.c.ClientSessionManager - Sending ActivateSessionRequest, secureChannelId=830290415, channel=[id: 0x373a3f6e, L:/192.168.51.180:41760 - R:/192.168.53.27:49320]...
+2017-11-06 14:49:54,152 [Thread-8] DEBUG o.e.m.o.s.c.ClientSessionManager - Session activated: NodeId{ns=1, id=0ab6e5a8-fd12-4ac5-9673-58a92e65e1a0}
+2017-11-06 14:49:54,153 [Thread-8] DEBUG o.e.m.o.s.c.ClientSessionManager - subscriptionCount=0, transferNeeded=false
+2017-11-06 14:49:54,183 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=3, acknowledgements=[]
+2017-11-06 14:49:54,184 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=4, acknowledgements=[]
+2017-11-06 14:49:54,718 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:55,176 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Received PublishResponse, sequenceNumber=1
+2017-11-06 14:49:55,177 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=95, acknowledgements=[]
+2017-11-06 14:49:55,186 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onPublishComplete() response for subscriptionId=7
+2017-11-06 14:49:55,187 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onNotificationMessage(), subscriptionId=7, sequenceNumber=1, publishTime=DateTime{utcTime=131544461931456354, javaDate=Mon Nov 06 14:49:53 EET 2017}
+2017-11-06 14:49:55,568 [main] DEBUG o.t.g.e.opc.OpcUaServerMonitor - Scanning device node: OpcUaNode(nodeId=NodeId{ns=2, id=Channel1.Device1}, name=Device1, fqn=Objects.Channel1.Device1)
+2017-11-06 14:49:55,571 [main] DEBUG o.t.g.e.opc.OpcUaServerMonitor - Scanning node hierarchy for tags: [Tag1, Tag2]
+2017-11-06 14:49:55,591 [main] ERROR o.t.g.e.opc.OpcUaServerMonitor - Failed to scan device: Device1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1931)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.lookupTags(OpcUaServerMonitor.java:319)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanDevice(OpcUaServerMonitor.java:191)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.lambda$scanForDevices$8(OpcUaServerMonitor.java:159)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanForDevices(OpcUaServerMonitor.java:157)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanForDevices(OpcUaServerMonitor.java:180)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanForDevices(OpcUaServerMonitor.java:180)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanForDevices(OpcUaServerMonitor.java:180)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.scanForDevices(OpcUaServerMonitor.java:133)
+	at org.thingsboard.gateway.extensions.opc.OpcUaServerMonitor.connect(OpcUaServerMonitor.java:111)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+	at org.thingsboard.gateway.extensions.opc.DefaultOpcUaService.init(DefaultOpcUaService.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at org.thingsboard.gateway.GatewayApplication.main(GatewayApplication.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:521)
+2017-11-06 14:49:55,720 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:56,724 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:57,727 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:58,728 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:49:59,730 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:00,732 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:01,734 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:02,738 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:03,740 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:04,742 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:05,743 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:06,194 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Received PublishResponse, sequenceNumber=1
+2017-11-06 14:50:06,196 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=998, acknowledgements=[]
+2017-11-06 14:50:06,198 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onPublishComplete() response for subscriptionId=7
+2017-11-06 14:50:06,199 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onNotificationMessage(), subscriptionId=7, sequenceNumber=1, publishTime=DateTime{utcTime=131544462041705605, javaDate=Mon Nov 06 14:50:04 EET 2017}
+2017-11-06 14:50:06,744 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:07,746 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:08,748 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:09,751 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:10,754 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:11,757 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:12,758 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:13,760 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:14,762 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:15,764 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:16,283 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Received PublishResponse, sequenceNumber=1
+2017-11-06 14:50:16,283 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onPublishComplete() response for subscriptionId=7
+2017-11-06 14:50:16,284 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=2104, acknowledgements=[]
+2017-11-06 14:50:16,284 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onNotificationMessage(), subscriptionId=7, sequenceNumber=1, publishTime=DateTime{utcTime=131544462142534127, javaDate=Mon Nov 06 14:50:14 EET 2017}
+2017-11-06 14:50:16,766 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:17,768 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:18,769 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:19,772 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:20,773 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:21,774 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:22,776 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:23,778 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:24,780 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:25,782 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:26,321 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Received PublishResponse, sequenceNumber=1
+2017-11-06 14:50:26,322 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onPublishComplete() response for subscriptionId=7
+2017-11-06 14:50:26,322 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Sending PublishRequest, requestHandle=3190, acknowledgements=[]
+2017-11-06 14:50:26,322 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - onNotificationMessage(), subscriptionId=7, sequenceNumber=1, publishTime=DateTime{utcTime=131544462243004669, javaDate=Mon Nov 06 14:50:24 EET 2017}
+2017-11-06 14:50:26,783 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:27,785 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:28,331 [main] INFO  o.t.g.e.opc.OpcUaServerMonitor - Device scan cycle completed in 34147 ms
+2017-11-06 14:50:28,343 [main] INFO  o.t.g.e.opc.OpcUaServerMonitor - Scheduling next scan in 10 seconds!
+2017-11-06 14:50:28,708 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2eee9593: startup date [Mon Nov 06 14:49:49 EET 2017]; root of context hierarchy
+2017-11-06 14:50:28,786 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:28,822 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-06 14:50:28,823 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-06 14:50:28,888 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:50:28,888 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:50:29,013 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:50:29,221 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-11-06 14:50:29,272 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-9090"]
+2017-11-06 14:50:29,292 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-0.0.0.0-9090]
+2017-11-06 14:50:29,295 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-11-06 14:50:29,326 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9090 (http)
+2017-11-06 14:50:29,343 [main] INFO  o.t.gateway.GatewayApplication - Started GatewayApplication in 40.914 seconds (JVM running for 41.788)
+2017-11-06 14:50:29,788 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:30,790 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:31,792 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:32,793 [MQTT Rec: oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=] DEBUG o.e.p.c.m.internal.CommsReceiver - oPus6tko1a57/eSXC5okZm/P812J8cuGUl/hWDBYEoM=: network read message
+2017-11-06 14:50:32,802 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2eee9593: startup date [Mon Nov 06 14:49:49 EET 2017]; root of context hierarchy
+2017-11-06 14:50:32,804 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-11-06 14:50:32,811 [Thread-10] INFO  o.t.g.e.opc.OpcUaServerMonitor - Disconnecting from OPC-UA server!
+2017-11-06 14:50:32,812 [Thread-10] DEBUG o.e.m.o.s.c.ClientSessionManager - Sending CloseSessionRequest...
+2017-11-06 14:50:32,842 [ua-shared-pool-2] DEBUG o.e.m.opcua.sdk.client.OpcUaClient - Notifying 1 ServiceFaultListeners
+2017-11-06 14:50:32,842 [ua-shared-pool-1] DEBUG o.e.m.opcua.sdk.client.OpcUaClient - Notifying 1 ServiceFaultListeners
+2017-11-06 14:50:32,845 [Thread-11] DEBUG o.e.m.o.s.c.ClientSessionManager - Session closed: NodeId{ns=1, id=0ab6e5a8-fd12-4ac5-9673-58a92e65e1a0}
+2017-11-06 14:50:32,850 [ua-shared-pool-3] DEBUG o.e.m.o.s.c.ClientSessionManager - ServiceFault: StatusCode{name=Bad_SessionClosed, value=0x80260000, quality=bad}
+2017-11-06 14:50:32,850 [ua-shared-pool-1] DEBUG o.e.m.o.s.c.ClientSessionManager - ServiceFault: StatusCode{name=Bad_SessionClosed, value=0x80260000, quality=bad}
+2017-11-06 14:50:32,850 [ua-shared-pool-0] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Publish service failure: StatusCode{name=Bad_SessionClosed, value=0x80260000, quality=bad}
+java.util.concurrent.CompletionException: UaServiceFaultException: status=Bad_SessionClosed, message=The session was closed by the client.
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:911)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:899)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at org.eclipse.milo.opcua.stack.client.UaTcpStackClient.receiveResponse(UaTcpStackClient.java:294)
+	at org.eclipse.milo.opcua.stack.client.UaTcpStackClient.lambda$sendRequest$3(UaTcpStackClient.java:147)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1962)
+	at org.eclipse.milo.opcua.stack.client.handlers.UaTcpClientMessageHandler.lambda$null$19(UaTcpClientMessageHandler.java:539)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.milo.opcua.stack.core.UaServiceFaultException: status=Bad_SessionClosed, description=The session was closed by the client.
+	... 10 common frames omitted
+2017-11-06 14:50:32,853 [Thread-12] DEBUG o.e.m.o.s.c.ClientChannelManager - Sending CloseSecureChannelRequest...
+2017-11-06 14:50:32,854 [ua-netty-event-loop-1] DEBUG o.e.m.o.s.c.ClientChannelManager - channelInactive(), disconnect complete
+2017-11-06 14:50:32,854 [ua-shared-pool-2] DEBUG o.e.m.o.s.c.s.OpcUaSubscriptionManager - Publish service failure: StatusCode{name=Bad_SessionClosed, value=0x80260000, quality=bad}
+java.util.concurrent.CompletionException: UaServiceFaultException: status=Bad_SessionClosed, message=The session was closed by the client.
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:911)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:899)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at org.eclipse.milo.opcua.stack.client.UaTcpStackClient.receiveResponse(UaTcpStackClient.java:294)
+	at org.eclipse.milo.opcua.stack.client.UaTcpStackClient.lambda$sendRequest$3(UaTcpStackClient.java:147)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1962)
+	at org.eclipse.milo.opcua.stack.client.handlers.UaTcpClientMessageHandler.lambda$null$19(UaTcpClientMessageHandler.java:539)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.milo.opcua.stack.core.UaServiceFaultException: status=Bad_SessionClosed, description=The session was closed by the client.
+	... 10 common frames omitted
+2017-11-06 14:50:32,854 [Thread-10] INFO  o.t.g.e.opc.OpcUaServerMonitor - Disconnected from OPC-UA server!
+2017-11-06 14:50:32,855 [Thread-12] DEBUG o.e.m.o.s.c.ClientChannelManager - disconnect complete, state set to Idle
